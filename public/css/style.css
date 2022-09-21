@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ebebeb;
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  width: 50%;
+}
+/* diseño adaptativo  micro 1*/
+main {
+  /*  width: 90%;*/
+  padding: 15px;
+  background-color: #e3e3de;
+}
+section.baners {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.articulo img {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.articuloDetalle {
+  border: solid #ebebeb;
+  border-top: 1px;
+  padding: 15px;
+}
+
+.Descripcion {
+  display: none;
+}
+/*
+img {
+  width: 360px;
+}
+*/
+.titulares {
+  font-size: 24px;
+}
+
+.precio {
+  font-size: 18px;
+}
+.descuentoDescripcion {
+  font-size: 16px;
+}
+
+.burger-menu {
+  text-align: center;
+}
+.burger-menu i {
+  background-color: #0044aa;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.menu1,
+.menu2 {
+  text-align: left;
+  display: none;
+}
+
+@media (min-width: 361px) {
+  .Descripcion {
+    display: block;
+  }
+
+  .menu1,
+  .menu2 {
+    display: block;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .Descripcion {
+    display: block;
+  }
+  .articulo,
+  .articuloDetalle {
+    box-shadow: 0px 0px 10px rgb (100, 100, 100);
+  }
+
+  .menu1,
+  .menu2 {
+    display: block;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+}
+@media (min-width: 1279px) {
+  .Descripcion {
+    display: block;
+  }
+  .articulo,
+  .articuloDetalle {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  .menu1,
+  .menu2 {
+    display: block;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+}
