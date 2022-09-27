@@ -1,0 +1,294 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/*header */
+
+.top-header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+.top-header p {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+header {
+  background-color: #eac926;
+  padding-bottom: 10px;
+}
+
+.logo,
+.form {
+  width: 50%;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  font-size: 11px;
+}
+header nav {
+  font-size: 12px;
+}
+
+header ul li {
+  list-style-type: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.input {
+  background-color: #fff;
+  border: 1px solid #000;
+  outline: none;
+  color: #666;
+  padding: 2px;
+}
+
+.submit {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #666;
+  width: 10%;
+}
+
+.burger-menu {
+  text-align: center;
+}
+.burger-menu i {
+  background-color: #0044aa;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+}
+
+.menu1,
+.menu2 {
+  text-align: left;
+  display: none;
+}
+
+/* fin header */
+
+/* footer */
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+
+footer section {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer i {
+  color: #1259c3;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+/*  fin footer */
+
+main {
+  display: flex;
+  background-color: #ebebeb;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+main form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.register-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #666;
+  color: rgba(255, 250, 250, 0.986);
+  width: 100%;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(81, 77, 77);
+  margin: 1rem;
+}
+
+h1 {
+  margin: 1rem 0;
+  flex-grow: 0.8;
+  flex-basis: 100%;
+}
+
+input {
+  background-color: rgba(255, 255, 255, 0.945);
+  font-size: 1.5rem;
+  border-radius: 5px;
+  color: rgba(63, 56, 56, 0.596);
+  margin: 1rem 0;
+}
+
+input:focus {
+  background-color: #d4d4d4;
+  color: black;
+  font-weight: bold;
+}
+
+input:invalid {
+  border-bottom: 2px solid rgb(227, 29, 29);
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.inputs input {
+  width: 100%;
+  padding: 0.5rem;
+  color: white;
+  border: none;
+  border-bottom: 1px solid rgba(138, 131, 131, 0.63);
+}
+
+.account-sub {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #1259c3;
+  color: white;
+  border: 1px solid transparent;
+  transition: background-color 2s;
+}
+
+.account-sub:hover {
+  background-color: #0022aa;
+}
+
+@media (min-width: 361px) {
+  /*menu*/
+  .top-header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    flex-direction: row; /*aumente */
+    justify-content: space-between; /*aumente */
+  }
+
+  .logo,
+  .form,
+  .top-header p {
+    width: 30%;
+    align-self: center;
+  }
+
+  nav {
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .menu1 ul,
+  .menu2 ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    /*justify-content: space-between;*/
+  }
+
+  .menu1 ul li a {
+    padding-left: 10px;
+  }
+
+  .menu2 ul li a {
+    padding-right: 10px;
+  }
+  /*
+  .menu2 ul li a {
+    display: flex;
+    justify-content: space-between;
+  }*/
+  .burger-menu {
+    display: none;
+  }
+  .menu1,
+  .menu2 {
+    display: block;
+  }
+
+  /*fin menu*/
+  .register-container {
+    margin: 10px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 60%;
+  }
+}
+
+@media (min-width: 769px) {
+  /*menu*/
+  .burger-menu {
+    display: none;
+  }
+
+  .menu1,
+  .menu2 {
+    display: block;
+  }
+
+  /* fin menu*/
+
+  .register-container {
+    margin: 10px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 60%;
+  }
+}
+
+@media (min-width: 1279px) {
+  /*menu*/
+  .burger-menu {
+    display: none;
+  }
+
+  .menu1,
+  .menu2 {
+    display: block;
+  }
+
+  /* fin menu*/
+
+  .register-container {
+    margin: 10px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 60%;
+  }
+}

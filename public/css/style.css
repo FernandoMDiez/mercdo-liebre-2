@@ -11,49 +11,67 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.logo {
-  width: 50%;
-}
-/* diseño adaptativo  micro 1*/
-main {
-  /*  width: 90%;*/
-  padding: 15px;
-  background-color: #e3e3de;
-}
-section.baners {
-  width: 100%;
-  padding: 0px;
-  margin: 0px;
-}
-
-.articulo img {
-  width: 100%;
-  margin-top: 10px;
-}
-
-.articuloDetalle {
-  border: solid #ebebeb;
-  border-top: 1px;
-  padding: 15px;
-}
-
-.Descripcion {
-  display: none;
-}
-/*
-img {
-  width: 360px;
-}
-*/
-.titulares {
+h3 {
   font-size: 24px;
 }
 
-.precio {
-  font-size: 18px;
+p {
+  font-size: 12px;
 }
-.descuentoDescripcion {
-  font-size: 16px;
+
+.top-header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+.top-header p {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+header {
+  background-color: #eac926;
+  padding-bottom: 10px;
+}
+
+.logo,
+.form {
+  width: 50%;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  font-size: 11px;
+}
+header nav {
+  font-size: 12px;
+}
+
+header ul li {
+  list-style-type: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.input {
+  background-color: #fff;
+  border: 1px solid #000;
+  outline: none;
+  color: #666;
+  padding: 2px;
+}
+
+.submit {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #666;
+  width: 10%;
 }
 
 .burger-menu {
@@ -68,13 +86,106 @@ img {
   padding: 10px;
 }
 
-a {
-  color: black;
-  text-decoration: none;
+.visita,
+.ofertas {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-li {
-  list-style-type: none;
+.precio {
+  font-size: 18px;
+  width: 30%;
+}
+
+.descuento {
+  width: 70%;
+}
+
+.descuento,
+.descripcion {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+h3,
+.descripcion {
+  color: #666;
+}
+
+.descripcion {
+  display: none;
+  margin-top: 20px;
+}
+
+section.banners img {
+  width: 100%;
+}
+
+/* diseño adaptativo  micro 1*/
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+main section article {
+  background-color: #fff;
+  margin: 10px 0px;
+}
+
+main section article img {
+  width: 100%;
+}
+
+main section article i,
+.descuento {
+  color: #39b54a;
+}
+
+main section article i {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  transition: transform 3s;
+}
+
+main section h3 {
+  margin: 20px 0px;
+}
+
+.articulo-detalle {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  border-top: 1px solid #ebebeb;
+  position: relative;
+  padding: 15px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+
+footer section {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer i {
+  color: #1259c3;
+  font-size: 2em;
+  margin-bottom: 10px;
 }
 
 .menu1,
@@ -83,28 +194,112 @@ li {
   display: none;
 }
 
-@media (min-width: 361px) {
-  .Descripcion {
-    display: block;
-  }
-
-  .menu1,
-  .menu2 {
-    display: block;
-  }
-
-  .burger-menu {
-    display: none;
-  }
+/*login*/
+.login {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #000000a1;
+  color: rgba(255, 250, 250, 0.986);
+  width: 100%;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(175, 9, 9);
+  margin: 1rem;
 }
 
-@media (min-width: 769px) {
-  .Descripcion {
+/*fin login */
+
+article:hover {
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+main section article i:hover {
+  transform: rotate(-90deg);
+}
+
+@media (min-width: 361px) {
+  .top-header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    flex-direction: row; /*aumente */
+    justify-content: space-between; /*aumente */
+  }
+
+  .logo,
+  .form,
+  .top-header p {
+    width: 30%;
+    align-self: center;
+  }
+
+  nav {
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .menu1 ul,
+  .menu2 ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    /*justify-content: space-between;*/
+  }
+
+  .menu1 ul li a {
+    padding-left: 10px;
+  }
+
+  .menu2 ul li a {
+    padding-right: 10px;
+  }
+  /*
+  .menu2 ul li a {
+    display: flex;
+    justify-content: space-between;
+  }*/
+  .burger-menu {
+    display: none;
+  }
+  .menu1,
+  .menu2 {
     display: block;
   }
-  .articulo,
-  .articuloDetalle {
-    box-shadow: 0px 0px 10px rgb (100, 100, 100);
+
+  .productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  article {
+    width: 45%;
+  }
+
+  .precio,
+  .descuento {
+    width: 50%;
+  }
+  article .articulo-detalle p.descripcion {
+    display: block;
+    visibility: visible;
+  }
+
+  article .articulo-detalle p.descripcion:hover {
+    visibility: hidden;
+  }
+}
+@media (min-width: 769px) {
+  .burger-menu {
+    display: none;
   }
 
   .menu1,
@@ -112,17 +307,53 @@ li {
     display: block;
   }
 
-  .burger-menu {
-    display: none;
+  .productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  article {
+    width: 22%;
+  }
+
+  .precio,
+  .descuento {
+    width: 50%;
+  }
+
+  article .articulo-detalle p.descripcion {
+    display: block;
+    visibility: visible;
+  }
+
+  article .articulo-detalle p.descripcion:hover {
+    visibility: hidden;
+  }
+  .fa.fa-credit-card:hover,
+  .fa.fa-gift:hover,
+  .fa.fa-user-shield:hover {
+    color: #03254c;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5%;
+  }
+
+  footer section {
+    width: 30%;
+    text-align: center;
+    margin-top: 10px;
   }
 }
 @media (min-width: 1279px) {
-  .Descripcion {
-    display: block;
-  }
-  .articulo,
-  .articuloDetalle {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  .burger-menu {
+    display: none;
   }
 
   .menu1,
@@ -130,7 +361,48 @@ li {
     display: block;
   }
 
-  .burger-menu {
-    display: none;
+  .productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  article {
+    width: 22%;
+  }
+
+  article .articulo-detalle p.descripcion {
+    display: block;
+    visibility: visible;
+  }
+
+  article .articulo-detalle p.descripcion:hover {
+    visibility: hidden;
+  }
+
+  .precio,
+  .descuento {
+    width: 50%;
+  }
+
+  .fa.fa-credit-card:hover,
+  .fa.fa-gift:hover,
+  .fa.fa-user-shield:hover {
+    color: #03254c;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5%;
+  }
+
+  footer section {
+    width: 30%;
+    text-align: center;
+    margin-top: 10px;
   }
 }
